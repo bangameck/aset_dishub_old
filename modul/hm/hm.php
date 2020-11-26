@@ -1,5 +1,5 @@
 <?php
-aut(array(1,2,3));
+//aut(array(1,2,3));
 $a = $_GET['a'];
 switch ($a) {
     default:
