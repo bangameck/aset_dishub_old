@@ -1,0 +1,24 @@
+<?php 
+$title = "Sistem Informasi Pelabuhan Provinsi Riau";
+$site = "http://lapor.dishub.pekanbaru.go.id/dbdishub";
+$develop = " bangameck.dev";
+$fb = " http://facebook.com/dishubpku";
+$ig = " http://instagram.com/atcs.kotapekanbaru";
+$aplikasi = "Gugus Covid-19 Dishub Pekanbaru";
+$a_admin = ".:: DB | Halaman Admin ::.";
+$website = "Dinas Perhubungan Kota Pekanbaru";
+$signature = "ATCS Kota Pekanbaru";
+$apl = "DB";
+$webmail = "atcs.kotapekanbaru@gmail.com";
+$webpmail = "Atcspku1";
+$tlp = "(0761)-88888";
+$fax = "(0761)-88888";
+$hp = "+62-822-8844-5265";
+$alamat = "Jl. Dr. Soetomo No. 88, Kel. Rintis, Kec. Lima Puluh, Pekanbaru, Riau";
+$pemerintah = "Pemerintah Kota Pekanbaru";
+$instansi = "Dinas Perhubungan";
+$fb_ins = "dishubkotapku";
+$ig_ins = "atcs.kotapekanbaru";
+$twit_ins = "atcs.kotapekanbaru";
+$yt_ins = "UCWY_DxbuSOFiut1uB4tl2Sg";
+//$footer = "&COPY; 2019 - " . date('Y') . " <a href='" . $ig . "' target='_blank'> " . $website . "</a> | " . $aplikasi . " | " . $traf . " "; 

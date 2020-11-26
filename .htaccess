@@ -1,0 +1,162 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+#website
+RewriteRule ^hm$ dash.php [L]
+RewriteRule ^out$ ?m=out [L]
+RewriteRule ^lgn$ lgn.php [L]
+#endweb
+
+#add_data
+RewriteRule ^add$ ?m=add [L]
+#end
+
+#kib_a
+RewriteRule ^kib_a$ ?m=kib_a [L]
+RewriteRule ^kib_a/det/([a-zA-Z0-9_-]+)$ ?m=kib_a&a=detail&id=$1 [L]
+#end
+
+#kib_b
+RewriteRule ^kib_b$ ?m=kib_b [L]
+RewriteRule ^kib_b/det/([a-zA-Z0-9_-]+)$ ?m=kib_b&a=detail&id=$1 [L]
+#end
+
+#kib_c
+RewriteRule ^kib_c$ ?m=kib_c [L]
+RewriteRule ^kib_c/det/([a-zA-Z0-9_-]+)$ ?m=kib_c&a=detail&id=$1 [L]
+#end
+
+#kib_d
+RewriteRule ^kib_d$ ?m=kib_d [L]
+RewriteRule ^kib_d/det/([a-zA-Z0-9_-]+)$ ?m=kib_d&a=detail&id=$1 [L]
+#end
+
+#kib_e
+RewriteRule ^kib_e$ ?m=kib_e [L]
+RewriteRule ^kib_e/det/([a-zA-Z0-9_-]+)$ ?m=kib_e&a=detail&id=$1 [L]
+#end
+
+#kib_atb
+RewriteRule ^kib_atb$ ?m=kib_atb [L]
+RewriteRule ^kib_atb/det/([a-zA-Z0-9_-]+)$ ?m=kib_atb&a=detail&id=$1 [L]
+#end
+
+#det
+RewriteRule ^det/([a-zA-Z0-9_-]+)$ ?m=det&id=$1 [L]
+#end
+
+#lev_usr
+RewriteRule ^pelabuhan$ ?m=pelabuhan [L]
+RewriteRule ^pelabuhan/add$ ?m=pelabuhan&a=add [L]
+RewriteRule ^pelabuhan/print$ modul/pelabuhan/print.php [L]
+RewriteRule ^pelabuhan/excel$ modul/pelabuhan/excel.php [L]
+RewriteRule ^pelabuhan/pdf$ modul/pelabuhan/pdf.php [L]
+RewriteRule ^pelabuhan/update/([a-zA-Z0-9_-]+)$ ?m=pelabuhan&a=update&id=$1 [L]
+RewriteRule ^pelabuhan/update-f/([a-zA-Z0-9_-]+)$ ?m=pelabuhan&a=update-f&id=$1 [L]
+RewriteRule ^pelabuhan/delete/([a-zA-Z0-9_-]+)$ ?m=pelabuhan&a=delete&id=$1 [L]
+RewriteRule ^pelabuhan/profile/([a-zA-Z0-9_-]+)$ ?m=pelabuhan&a=profile&id=$1 [L]
+#end
+
+#lev_usr
+RewriteRule ^usaha$ ?m=usaha [L]
+RewriteRule ^usaha/add$ ?m=usaha&a=add [L]
+RewriteRule ^usaha/print$ modul/usaha/print.php [L]
+RewriteRule ^usaha/excel$ modul/usaha/excel.php [L]
+RewriteRule ^usaha/pdf$ modul/usaha/pdf.php [L]
+RewriteRule ^usaha/update/([a-zA-Z0-9_-]+)$ ?m=usaha&a=update&id=$1 [L]
+RewriteRule ^usaha/update-f/([a-zA-Z0-9_-]+)$ ?m=usaha&a=update-f&id=$1 [L]
+RewriteRule ^usaha/delete/([a-zA-Z0-9_-]+)$ ?m=usaha&a=delete&id=$1 [L]
+RewriteRule ^usaha/profile/([a-zA-Z0-9_-]+)$ ?m=usaha&a=profile&id=$1 [L]
+#end
+
+#user
+RewriteRule ^usr$ ?m=usr [L]
+RewriteRule ^usr/add$ ?m=usr&a=add [L]
+RewriteRule ^usr/update/([a-zA-Z0-9_-]+)$ ?m=usr&a=update&id=$1 [L]
+RewriteRule ^usr/update-f/([a-zA-Z0-9_-]+)$ ?m=usr&a=update-f&id=$1 [L]
+RewriteRule ^usr/delete/([a-zA-Z0-9_-]+)$ ?m=usr&a=delete&id=$1 [L]
+RewriteRule ^usr/profile/([a-zA-Z0-9_-]+)$ ?m=usr&a=profile&id=$1 [L]
+#end
+
+#kecamatan
+RewriteRule ^kec$ ?m=kec [L]
+RewriteRule ^kec/add$ ?m=kec&a=add [L]
+RewriteRule ^kec/update/([a-zA-Z0-9_-]+)$ ?m=kec&a=update&id=$1 [L]
+RewriteRule ^kec/delete/([a-zA-Z0-9_-]+)$ ?m=kec&a=delete&id=$1 [L]
+#end
+
+#kelurahan
+RewriteRule ^kel$ ?m=kel [L]
+RewriteRule ^kel/add$ ?m=kel&a=add [L]
+RewriteRule ^kel/update/([a-zA-Z0-9_-]+)$ ?m=kel&a=update&id=$1 [L]
+RewriteRule ^kel/delete/([a-zA-Z0-9_-]+)$ ?m=kel&a=delete&id=$1 [L]
+#end
+
+#data-pengunjung
+RewriteRule ^data$ ?m=data [L]
+RewriteRule ^data/add$ ?m=data&a=add [L]
+RewriteRule ^data/add_l$ ?m=data&a=add_l [L]
+RewriteRule ^data/update/([a-zA-Z0-9_-]+)$ ?m=data&a=update&id=$1 [L]
+RewriteRule ^data/update_l$ ?m=data&a=update_l [L]
+RewriteRule ^data/delete/([a-zA-Z0-9_-]+)$ ?m=data&a=delete&id=$1 [L]
+RewriteRule ^det/([a-zA-Z0-9_-]+)$ ?m=det&id=$1 [L]
+#end
+
+#data-pengunjung(operator)
+RewriteRule ^dat_op$ ?m=dat_op [L]
+RewriteRule ^dat_op/add$ ?m=dat_op&a=add [L]
+RewriteRule ^dat_op/add_l$ ?m=dat_op&a=add_l [L]
+RewriteRule ^dat_op/update/([a-zA-Z0-9_-]+)$ ?m=dat_op&a=update&id=$1 [L]
+RewriteRule ^dat_op/update_l$ ?m=dat_op&a=update_l [L]
+#end
+
+#data-psbb(operator)
+RewriteRule ^psbb$ ?m=psbb [L]
+RewriteRule ^psbb/add$ ?m=psbb&a=add [L]
+RewriteRule ^psbb/update/([a-zA-Z0-9_-]+)$ ?m=psbb&a=update&id=$1 [L]
+RewriteRule ^det_psbb/([a-zA-Z0-9_-]+)$ ?m=det_psbb&id=$1 [L]
+#end
+
+#data-psbb(operator)
+RewriteRule ^psbb_op$ ?m=psbb_op [L]
+RewriteRule ^psbb_op/add$ ?m=psbb_op&a=add [L]
+RewriteRule ^psbb_op/update/([a-zA-Z0-9_-]+)$ ?m=psbb_op&a=update&id=$1 [L]
+
+#end
+
+#data-zona(operator)
+RewriteRule ^zona_op$ ?m=zona_op [L]
+RewriteRule ^zona_op/add$ ?m=zona_op&a=add [L]
+RewriteRule ^zona_op/update/([a-zA-Z0-9_-]+)$ ?m=zona_op&a=update&id=$1 [L]
+RewriteRule ^det_zona_m/([a-zA-Z0-9_-]+)$ ?m=det_zona_m&id=$1 [L]
+#end
+
+#data-zona(operator)
+RewriteRule ^hunting_op$ ?m=hunting_op [L]
+RewriteRule ^hunting_op/add$ ?m=hunting_op&a=add [L]
+RewriteRule ^hunting_op/update/([a-zA-Z0-9_-]+)$ ?m=hunting_op&a=update&id=$1 [L]
+RewriteRule ^det_hunting/([a-zA-Z0-9_-]+)$ ?m=det_hunting&id=$1 [L]
+#end
+
+#data-pengunjung(operator)
+RewriteRule ^dat_all$ ?m=dat_all [L]
+RewriteRule ^psbb_all$ ?m=psbb_all [L]
+RewriteRule ^zona_all$ ?m=zona_all [L]
+RewriteRule ^hunting_all$ ?m=hunting_all [L]
+RewriteRule ^gallery$ ?m=gallery [L]
+RewriteRule ^gallery_l$ ?m=gallery&a=gallery_l [L]
+#end
+
+#profil
+RewriteRule ^profil$ ?m=profil [L]
+RewriteRule ^profil/set$ ?m=profil&a=set [L]
+
+#ext
+RewriteRule ^kecamatan$ modul/data/kec.php [L]
+#
+
+#error
+ErrorDocument 404 /404.php
+#enderror
+Options All -Indexes
+</IfModule>
